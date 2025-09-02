@@ -79,14 +79,6 @@
     <div class="question"><h2>سؤال 1: ما هو اسمك؟</h2><textarea placeholder="اكتب إجابتك هنا"></textarea></div>
     <div class="question"><h2>سؤال 2: كم عمرك؟</h2><textarea placeholder="اكتب إجابتك هنا"></textarea></div>
     <div class="question"><h2>سؤال 3: أين تسكن؟</h2><textarea placeholder="اكتب إجابتك هنا"></textarea></div>
-
-    <script>
-      const container = document.getElementById("questionsContainer");
-      for (let i=4; i<=25; i++){
-        const div = document.createElement("div");
-        div.className="question";
-        div.innerHTML=`<h2>سؤال ${i}: أين تسكن؟</h2><textarea placeholder="اكتب إجابتك هنا"></textarea>`;
-        container.appendChild(div);
       }
     </script>
 
@@ -111,7 +103,7 @@
 const firebaseConfig = {
   apiKey: "AIzaSyCpkkn44WjU8fzKoWtnyj69ajiDJFm9I6c",
   authDomain: "s5b1-4265d.firebaseapp.com",
-  projectId: "s5b1-4265d",
+  projectId: "https://s5b-v4.vercel.app/",
   storageBucket: "s5b1-4265d.firebasestorage.app",
   messagingSenderId: "318029605221",
   appId: "1:318029605221:web:5b0b50ba27aa889d90198c",
