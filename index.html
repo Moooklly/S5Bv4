@@ -79,14 +79,6 @@
     <div class="question"><h2>سؤال 1: ما هو اسمك؟</h2><textarea placeholder="اكتب إجابتك هنا"></textarea></div>
     <div class="question"><h2>سؤال 2: كم عمرك؟</h2><textarea placeholder="اكتب إجابتك هنا"></textarea></div>
     <div class="question"><h2>سؤال 3: أين تسكن؟</h2><textarea placeholder="اكتب إجابتك هنا"></textarea></div>
-
-    <script>
-      const container = document.getElementById("questionsContainer");
-      for (let i=4; i<=25; i++){
-        const div = document.createElement("div");
-        div.className="question";
-        div.innerHTML=`<h2>سؤال ${i}: اكتب إجابتك هنا</h2><textarea placeholder="اكتب إجابتك هنا"></textarea>`;
-        container.appendChild(div);
       }
     </script>
 
@@ -108,16 +100,17 @@
 
   <script>
     // ✅ إعدادات Firebase (صححنا projectId + أضفنا databaseURL)
-    const firebaseConfig = {
-      apiKey: "AIzaSyCpkkn44WjU8fzKoWtnyj69ajiDJFm9I6c",
-      authDomain: "s5b1-4265d.firebaseapp.com",
-      databaseURL: "https://s5b1-4265d-default-rtdb.firebaseio.com", // ✅ هذا مهم
-      projectId: "s5b1-4265d",
-      storageBucket: "s5b1-4265d.appspot.com",
-      messagingSenderId: "318029605221",
-      appId: "1:318029605221:web:5b0b50ba27aa889d90198c",
-      measurementId: "G-VL9DE9P7Z0"
-    };
+const firebaseConfig = {
+  apiKey: "AIzaSyCpkkn44WjU8fzKoWtnyj69ajiDJFm9I6c",
+  authDomain: "s5b1-4265d.firebaseapp.com",
+  databaseURL: "https://s5b1-4265d-default-rtdb.firebaseio.com", // 🔥 ضروري
+  projectId: "s5b1-4265d",
+  storageBucket: "s5b1-4265d.appspot.com",
+  messagingSenderId: "318029605221",
+  appId: "1:318029605221:web:5b0b50ba27aa889d90198c",
+  measurementId: "G-VL9DE9P7Z0"
+};
+
 
     // تشغيل Firebase
     firebase.initializeApp(firebaseConfig);
