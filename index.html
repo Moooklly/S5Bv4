@@ -79,6 +79,14 @@
     <div class="question"><h2>سؤال 1: ما هو اسمك؟</h2><textarea placeholder="اكتب إجابتك هنا"></textarea></div>
     <div class="question"><h2>سؤال 2: كم عمرك؟</h2><textarea placeholder="اكتب إجابتك هنا"></textarea></div>
     <div class="question"><h2>سؤال 3: أين تسكن؟</h2><textarea placeholder="اكتب إجابتك هنا"></textarea></div>
+
+    <script>
+      const container = document.getElementById("questionsContainer");
+      for (let i=4; i<=25; i++){
+        const div = document.createElement("div");
+        div.className="question";
+        div.innerHTML=`<h2>سؤال ${i}: أين تسكن؟</h2><textarea placeholder="اكتب إجابتك هنا"></textarea>`;
+        container.appendChild(div);
       }
     </script>
 
